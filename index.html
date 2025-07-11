@@ -14,8 +14,10 @@
 </head>
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-        <h1>Alex Martins</h1>
+        <div class="header-title">
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals -</span>
+            <span id="student-name">Alex Martins</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="www.linkedin.com/in/alex-r-martins-152b5966">LinkedIn</a></li>
@@ -25,20 +27,25 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="card">
-            <img src="images/alex-self.jpg" alt="alex-martins">
-            <h1>About Me</h1>
-            <p>My name is Alex Martins. I was born in Sao Paulo/Brazil and I live currently
+    <main class="grid-container">
+        <section class="card about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My name is Alex Martins. I was born in Sao Paulo/Brazil and I live currently
                 with my wife in Utah/United States. I am currently working as Store Manager
                 in a 7-Eleven convencience store. I love spend time together with my wife,
                 and I love to travel and know new places.
-            </p>
-        </section>
-        <section class="card">
-            <img src="images/utah-usa-flags.webp" alt="utah-usa-flags">
-            <h1>Utah</h1>
-            <p> Utah is a beautiful and diverse state located in the western United States,
+                </p>
+                <img src="images/alex-self.jpg" alt="alex-martins">
+            </div>
+            <h3>Utah, United States</h3>
+            <hr />
+            <div class="location-content">
+                <figure>    
+                    <img src="images/utah-usa-flags.webp" alt="utah-usa-flags">
+                    <figcaption><em>Official Flag of Utah and the USA</em></figcaption>
+                </figure>
+                <p> Utah is a beautiful and diverse state located in the western United States,
                 known for its stunning natural landscapes and unique blend of desert,
                 mountains, and forests. One of Utah's biggest highlights is its incredible
                 outdoor recreation opportunities, from skiing in the world-famous resorts 
@@ -47,15 +54,25 @@
                 a strong sense of community, low crime rates, and a relatively low cost of
                 living compared to other western states. Its rich cultural and pioneer 
                 history, along with a growing economy and family-friendly environment,
-                make Utah a great place to live, work, and explore.
-
-            </p>
+                make Utah a great place to live, work, and explore. 
+                </p>
+            </div>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
+            </ul>
         </section>
     </main>           
     <footer>
-        <p>©️<span id="currentyear"></span> - Alex Martins - Utah - United States</p>
+        <p>©️<span id="currentyear"></span> 😁 Alex Martins 😁 Utah - United States</p>
         <p><span id="lastModified"></span></p>
-    </footer>
-    
+    </footer>  
 </body>
 </html>

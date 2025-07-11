@@ -1,18 +1,21 @@
-/* Root color and font settings */
+/* Root Variables (Colors & Fonts) */
+
 :root {
-  --primary-color: #429AD2; /* Celestial blue */
-  --secondary-color: #073F6F; /* Indigo dye */
-  --accent-color: #EFF9FF;   /* Alice blue */
+  --primary-color: #429AD2;    
+  --secondary-color: #073F6F;     
+  --accent-color: #EFF9FF;       
   --text-color: #333;
   --font-heading: "Permanent Marker", cursive;
   --font-body: "Fuzzy Bubbles", cursive;
 }
 
-/* Global styles */
-* {
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -20,10 +23,11 @@ body {
   color: var(--text-color);
   background-color: var(--accent-color);
   line-height: 1.6;
-  padding: 0 1rem;
+  height: 100%;
+  width: 100%;
+  
 }
 
-/* Header styles */
 header {
   background-color: var(--primary-color);
   color: white;
@@ -31,44 +35,69 @@ header {
   padding: 1rem 0;
 }
 
-header span#course-title {
-  display: block;
+header #course-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
-/* Navigation styles using Flex */
-nav ul {
+.header-title {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#course-title {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#student-name {
+  color: #bada55;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
   gap: 1.5rem;
   list-style: none;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
+  margin: 0;
+  align-items: center;
+}
+
+nav {
+  background-color: #330099;
+  width: 100%;
 }
 
 nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect */
 nav a:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
   transform: scale(1.05);
 }
 
-/* Main content */
 main {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 2rem auto;
   display: grid;
   gap: 2rem;
+  padding: 0 1rem;
 }
 
 main h1 {
@@ -79,15 +108,42 @@ main h1 {
   margin-bottom: 1rem;
 }
 
-/* Card layout using Grid */
-.card {
-  background: white;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.grid-container {
   display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  border-radius: 10px 10px 0 0;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+}
+
+.card-content {
+  display: flex;
   gap: 1rem;
+  align-items: flex-start;
+}
+
+.card-content img {
+  width: 120px;
+  border-radius: 10px;
 }
 
 .card img {
@@ -96,7 +152,68 @@ main h1 {
   border-radius: 8px;
 }
 
-/* Footer styles */
+.card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.location-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.location-content figure {
+  margin: 0;
+  text-align: center;
+}
+
+.location-content img {
+  width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+figure {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.resources ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.resources a {
+  color: #330099;
+  text-decoration: underline;
+}
+
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -105,3 +222,18 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+footer p {
+  margin: 0.3rem;
+}
+
+footer #lastModified {
+  color: gold;
+  font-weight: bold;
+}
+
+.highlight-name {
+  color: #bada55;
+  font-weight: bold;
+}
+
