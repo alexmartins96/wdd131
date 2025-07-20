@@ -1,5 +1,5 @@
 // ✅ Set current year in footer
-const yearSpan = document.querySelector('#year');
+const yearSpan = document.querySelector('#currentyear');
 if (yearSpan) {
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
