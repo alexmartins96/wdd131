@@ -130,3 +130,14 @@ footer {
 .city-info strong {
   color: var(--secondary-color);
 }
+
+.weather-icon.emoji {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Hide SVG in wide view */
+.weather-svg {
+  display: none;
+}
