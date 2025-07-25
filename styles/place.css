@@ -1,9 +1,9 @@
 /* Global CSS Variables — New York Style */
 :root {
-  --primary-color: #1E2A38;       /* NYC deep navy */
-  --secondary-color: #6C7A89;     /* steel gray */
-  --accent-color: #FFCC00;        /* taxi yellow */
-  --background-color: #F5F5F5;    /* light background */
+  --primary-color: #1E2A38;
+  --secondary-color: #6C7A89;
+  --accent-color: #FFCC00;
+  --background-color: #F5F5F5;
   --text-color: #222222;
   --heading-font: 'Permanent Marker', cursive;
   --body-font: 'Fuzzy Bubbles', sans-serif;
@@ -58,22 +58,26 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Weather Icon Styling (emoji for wide, SVG for mobile) */
+/* Weather Icon Default: Emoji (Wide View) */
 .weather-icon::before {
   content: "🌤️";
   font-size: 1.5rem;
   margin-left: 0.5rem;
+  display: inline-block;
 }
 
-/* Media Query for Mobile */
+.weather-icon::after {
+  content: "";
+  display: none; /* Hidden by default */
+}
+
+/* Mobile View: Show SVG icon instead */
 @media (max-width: 600px) {
-  body {
-    font-size: 0.95rem;
-    padding: 0.5rem;
+  .weather-icon::before {
+    display: none;
   }
 
-  .weather-icon::before {
-    content: "";
+  .weather-icon::after {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -84,11 +88,16 @@ footer {
     vertical-align: middle;
   }
 
-  h2 {
-    font-size: 1.4rem;
+  body {
+    font-size: 0.95rem;
+    padding: 0.5rem;
   }
 
   main {
     padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 }
