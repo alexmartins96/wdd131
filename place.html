@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Martins">
+    <meta name="description" content="Alex Martins | WDD 131 - Dynamic Web Fundamentals - Information about New York City, place that I want to visit">
+    <title>WDD 131 - Dynamic Web Fundamentals - Alex Martins - City that I want to visit</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <h1>New York City</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="New York City skyline and Statue of Liberty" width="1500" height="600">
+        </picture>
+    </header>
+    <main>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+            <p>Temperature: <span id="temperature">40</span>°F</p>
+            <p>Wind Speed: <span id="wind-speed">6</span> mph</p>
+            <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+        </section>
+    </main>   
+    <footer>
+        <p>©️<span id="currentyear"></span> 😁 Alex Martins 😁 Utah - United States</p>
+        <p><span id="lastModified"></span></p>
+    </footer>  
+</body>
+</html>

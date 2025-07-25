@@ -1,0 +1,94 @@
+/* Global CSS Variables — New York Style */
+:root {
+  --primary-color: #1E2A38;       /* NYC deep navy */
+  --secondary-color: #6C7A89;     /* steel gray */
+  --accent-color: #FFCC00;        /* taxi yellow */
+  --background-color: #F5F5F5;    /* light background */
+  --text-color: #222222;
+  --heading-font: 'Permanent Marker', cursive;
+  --body-font: 'Fuzzy Bubbles', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: var(--heading-font);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Weather Icon Styling (emoji for wide, SVG for mobile) */
+.weather-icon::before {
+  content: "🌤️";
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .weather-icon::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/weather-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
