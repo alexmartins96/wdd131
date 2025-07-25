@@ -101,3 +101,32 @@ footer {
     font-size: 1.4rem;
   }
 }
+
+.city-info {
+  background-color: white;
+  border-left: 6px solid var(--accent-color);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.city-info h2 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.city-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city-info li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.city-info strong {
+  color: var(--secondary-color);
+}
