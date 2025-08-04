@@ -81,7 +81,7 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/800x500/sao-paulo-brazil-temple-lds-187030-wallpaper.jpg"
     },
     {
-        templeName: "Curitiba Brasil",
+        templeName: "Curitiba Brazil",
         location: "Curitiba, Brazil",
         dedicated: "2008, June, 1",
         area: 1806,
