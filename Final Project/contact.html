@@ -7,53 +7,61 @@
     <title>Contact Us - Sweet Morsel</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
-                <span class="logo-text">Sweet Morsel</span>
-            </a>
-        </div>
-        <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
-        <nav id="primaryNav">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="page-hero">
-        <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
-        <div class="page-hero-text">
-            <h1>Sweet Morsel</h1>
-            <p>Artisan cookies made with love</p>
-        </div>
-    </section>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
+                    <span class="logo-text">Sweet Morsel</span>
+                </a>
+            </div>
+            <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
+            <nav id="primaryNav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="page-hero">
+            <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
+            <div class="page-hero-text">
+                <h1>Sweet Morsel</h1>
+                <p>Artisan cookies made with love</p>
+            </div>
+        </section>
 
-    <main class="contact">
-        <h1>Contact Us</h1>
-        <form action="thank_you.html" method="get">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <main class="contact">
+            <section class="contact-section">
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <form action="thank_you.html" method="get">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Sweet Morsel</a></p>
-    </footer>
-    <script src="scripts/footer.js" defer></script>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Sweet Morsel. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

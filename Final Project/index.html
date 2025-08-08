@@ -5,82 +5,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweet Morsel</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/footer.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
-                <span class="logo-text">Sweet Morsel</span>
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <form id="searchForm" class="search-form" role="search">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button type="submit" aria-label="Search">🔍</button>
-        </form>
-        </nav>
-    </header>
-
-    <main>
-        <section class="page-hero">
-            <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
-            <div class="page-hero-text">
-                <h1>Sweet Morsel</h1>
-                <p>Artisan cookies made with love</p>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
+                    <span class="logo-text">Sweet Morsel</span>
+                </a>
             </div>
-        </section>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <form id="searchForm" class="search-form" role="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
+            </nav>
+        </header>
 
-        <section class="cookies">
-            <h2>Our Cookies</h2>
-            <div class="cookie-grid">
-                <div class="cookie-card">
-                    <img src="images/apple_cinnamon.jpg" alt="Apple Cinnamon" loading="lazy">
-                    <div class="cookie-caption">Apple Cinnamon</div>
+        <main>
+            <section class="page-hero">
+                <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
+                <div class="page-hero-text">
+                    <h1>Sweet Morsel</h1>
+                    <p>Artisan cookies made with love</p>
                 </div>
-                <div class="cookie-card">
-                    <img src="images/choc_chips.jpg" alt="Ultimate Chocolate Chips" loading="lazy">
-                    <div class="cookie-caption">Ultimate Chocolate Chips</div>
+            </section>
+
+            <section class="cookies">
+                <div class="cookies-heading">
+                    <h2>Our Cookies</h2>
                 </div>
-                <div class="cookie-card">
-                    <img src="images/lemon_dream.jpg" alt="Lemon Dream" loading="lazy">
-                    <div class="cookie-caption">Lemon Dream</div>
+                <div class="cookie-grid">
+                    <div class="cookie-card">
+                        <img src="images/apple_cinnamon.jpg" alt="Apple Cinnamon" loading="lazy">
+                        <div class="cookie-caption">Apple Cinnamon</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/choc_chips.jpg" alt="Ultimate Chocolate Chips" loading="lazy">
+                        <div class="cookie-caption">Ultimate Chocolate Chips</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/lemon_dream.jpg" alt="Lemon Dream" loading="lazy">
+                        <div class="cookie-caption">Lemon Dream</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/peanut_choc.jpg" alt="Peanut Butter Chocolate" loading="lazy">
+                        <div class="cookie-caption">Peanut Butter Chocolate</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/romeo_juliet.jpg" alt="Romeo and Juliet" loading="lazy">
+                        <div class="cookie-caption">Romeo and Juliet</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/salted_caramel.jpg" alt="Salted Caramel" loading="lazy">
+                        <div class="cookie-caption">Salted Caramel</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/white_choc_almond.jpg" alt="White Chocolate Almond" loading="lazy">
+                        <div class="cookie-caption">White Chocolate Almond</div>
+                    </div>
+                    <div class="cookie-card">
+                        <img src="images/white_choc_strawberry.jpg" alt="White Chocolate Strawberry" loading="lazy">
+                        <div class="cookie-caption">White Chocolate Strawberry</div>
+                    </div>
                 </div>
-                <div class="cookie-card">
-                    <img src="images/peanut_choc.jpg" alt="Peanut Butter Chocolate" loading="lazy">
-                    <div class="cookie-caption">Peanut Butter Chocolate</div>
-                </div>
-                <div class="cookie-card">
-                    <img src="images/romeo_juliet.jpg" alt="Romeo and Juliet" loading="lazy">
-                    <div class="cookie-caption">Romeo and Juliet</div>
-                </div>
-                <div class="cookie-card">
-                    <img src="images/salted_caramel.jpg" alt="Salted Caramel" loading="lazy">
-                    <div class="cookie-caption">Salted Caramel</div>
-                </div>
-                <div class="cookie-card">
-                    <img src="images/white_choc_almond.jpg" alt="White Chocolate Almond" loading="lazy">
-                    <div class="cookie-caption">White Chocolate Almond</div>
-                </div>
-                <div class="cookie-card">
-                    <img src="images/white_choc_strawberry.jpg" alt="White Chocolate Strawberry" loading="lazy">
-                    <div class="cookie-caption">White Chocolate Strawberry</div>
-                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Sweet Morsel. All rights reserved.</p>
             </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Sweet Morsel</p>
-    </footer>
-    <script src="scripts/footer.js" defer></script>
+        </footer>
+    </div>
 </body>
 
 </html>

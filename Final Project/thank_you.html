@@ -12,7 +12,12 @@
 
 <body>
     <header>
-        <div class="logo">Sweet Morsel</div>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
+                <span class="logo-text">Sweet Morsel</span>
+            </a>
+        </div>
         <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
         <nav id="primaryNav">
             <ul class="nav-links">
@@ -22,15 +27,26 @@
             </ul>
         </nav>
     </header>
+    <section class="page-hero">
+        <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
+        <div class="page-hero-text">
+            <h1>Sweet Morsel</h1>
+            <p>Artisan cookies made with love</p>
+        </div>
+    </section>
 
-    <main class="thank-you">
-        <h1>Thank You!</h1>
-        <p>Your message has been sent successfully. We'll get back to you soon!</p>
-        <a href="index.html" class="button">Back to Home</a>
+    <main class="thank-you-container">
+        <div class="thank-you-content">
+            <h1>Thank You!</h1>
+            <p>Your message has been sent successfully. We'll get back to you soon!</p>
+            <a href="index.html">Back to Home</a>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Sweet Morsel | <a href="references.html">References</a></p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Sweet Morsel. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 
