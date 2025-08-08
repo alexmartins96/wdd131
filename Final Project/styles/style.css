@@ -314,7 +314,8 @@ nav {
     }
 
     #hamburgerBtn {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     nav#primaryNav {
