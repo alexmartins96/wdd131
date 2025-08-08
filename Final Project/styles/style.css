@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    background-color: #fffaf4;
+    color: #333;
+}
+
+header {
+    background-color: #964B00;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-icon {
+    border: 2px solid white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e6e6e6;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Cookies Section */
+.cookies {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cookies h2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cookie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.cookie-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-icon {
+        margin-top: 0.5rem;
+    }
+}
+
+#hamburgerBtn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #hamburgerBtn {
+    display: block;
+  }
+
+  nav#primaryNav {
+    display: none;
+    width: 100%;
+  }
+
+  nav#primaryNav.open {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background-color: #964B00;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
