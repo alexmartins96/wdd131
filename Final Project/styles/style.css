@@ -283,7 +283,13 @@ nav {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container {
+        justify-content: center;
+        width: 100%;
     }
 
     .nav-links {
@@ -291,6 +297,7 @@ nav {
         align-items: flex-start;
         background-color: #964B00;
         padding: 0.5rem 1rem;
+        width: 100%;
     }
 
     .nav-links li {
@@ -303,6 +310,7 @@ nav {
 
     #hamburgerBtn {
         display: block;
+        margin: 100%;
     }
 
     nav#primaryNav {
@@ -311,7 +319,9 @@ nav {
     }
 
     nav#primaryNav.open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -488,9 +498,27 @@ nav {
     background-color: #7a3c00;
 }
 
-body {
-    font-family: 'Fuzzy Bubbles', 'Comic Relief', cursive, sans-serif;
-    margin: 0;
-    background-color: #fffaf4;
-    color: #333;
+
+.order-now-btn {
+    display: inline-block;
+    background-color: #964B00;
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.3rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 1.5rem;
+}
+
+.order-now-btn:hover {
+    background-color: #7a3c00;
+    transform: scale(1.05);
+}
+
+.center {
+    text-align: center;
+    margin-top: 2rem;
 }
