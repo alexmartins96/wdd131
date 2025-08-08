@@ -281,10 +281,18 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .logo-container {
+        justify-content: center;  
+        width: 100%;
+    }
+
+    .logo-text {
+        margin-left: 0;          
+        text-align: center;      
+    }
     header {
         flex-direction: column;
         align-items: center;
-        width: auto;
     }
 
     .nav-links {
