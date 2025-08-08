@@ -10,35 +10,45 @@
 
 <body>
     <header>
-        <div class="logo">Sweet Morsel</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="search-icon">🔍</div>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.jpg" alt="Sweet Morsel Logo" class="logo-img">
+                <span class="logo-text">Sweet Morsel</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <form id="searchForm" class="search-form" role="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit" aria-label="Search">🔍</button>
+        </form>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <img src="https://via.placeholder.com/600x200" alt="Hero Image">
+        <section class="page-hero">
+            <img src="images/hero.jpg" alt="Delicious Sweet Morsel Cookie">
+            <div class="page-hero-text">
+                <h1>Sweet Morsel</h1>
+                <p>Artisan cookies made with love</p>
+            </div>
         </section>
 
         <section class="cookies">
             <h2>Our Cookies</h2>
             <div class="cookie-grid">
-                <!-- 9 Cookie Cards -->
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 1"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 2"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 3"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 4"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 5"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 6"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 7"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 8"></div>
-                <div class="cookie-card"><img src="https://via.placeholder.com/200x120" alt="Cookie 9"></div>
+                <div class="cookie-card"><img src="images/apple_cinnamon.jpg" alt="Apple Cinnamon"></div>
+                <div class="cookie-card"><img src="images/choc_chips.jpg" alt="Chocolate Chips"></div>
+                <div class="cookie-card"><img src="images/lemon_dream.jpg" alt="Lemon Dream"></div>
+                <div class="cookie-card"><img src="images/peanut_choc.jpg" alt="Peanut Butter Chocolate"></div>
+                <div class="cookie-card"><img src="images/romeo_juliet.jpg" alt="Romeo and Juliet"></div>
+                <div class="cookie-card"><img src="images/salted_caramel.jpg" alt="Salted Caramel"></div>
+                <div class="cookie-card"><img src="images/white_choc_almond.jpg" alt="White Chocolate Almond"></div>
+                <div class="cookie-card"><img src="images/white_choc_strawberry.jpg" alt="White Chocolate Strawberry">
+                </div>
             </div>
         </section>
     </main>
